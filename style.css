@@ -462,7 +462,16 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  :root { --nav-h: 64px; }
+  :root { --nav-h: 70px; }
+  .nav-inner {
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    padding: 0 16px;
+  }
+  .logo-img { height: 50px; }
+  .nav-socials { gap: 14px; }
+  .nav-socials a { font-size: 1.2rem; }
+  .btn-whatsapp { padding: 8px 12px; font-size: .75rem; text-align: center; white-space: nowrap; }
   .nav-links { display: none; flex-direction: column; position: fixed; top: var(--nav-h); left: 0; right: 0; background: var(--white); padding: 24px; gap: 20px; box-shadow: var(--shadow-md); z-index: 999; }
   .nav-links.open { display: flex; }
   .hamburger { display: flex; }
