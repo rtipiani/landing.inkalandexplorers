@@ -488,7 +488,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 480px) {
-  .trust-bar-inner { flex-direction: column; gap: 8px; }
+  .trust-bar-inner { flex-direction: column; align-items: flex-start; width: max-content; margin: 0 auto; gap: 16px; padding: 24px 0; }
   .trust-divider { display: none; }
   .trust-item { padding: 4px 0; }
   .hero-cta { flex-direction: column; }
