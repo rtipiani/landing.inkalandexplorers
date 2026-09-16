@@ -484,11 +484,11 @@ a { text-decoration: none; color: inherit; }
   .exp-features { grid-template-columns: repeat(2,1fr); }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .float-wa-label { display: none; }
-  .float-wa { padding: 13px; border-radius: 50%; }
+  .float-wa { padding: 13px; border-radius: 50%; right: 16px; bottom: 16px; }
 }
 
 @media (max-width: 480px) {
-  .trust-bar-inner { flex-direction: column; align-items: flex-start; width: max-content; margin: 0 auto; gap: 16px; padding: 24px 0; }
+  .trust-bar-inner { flex-direction: column; align-items: flex-start; width: fit-content; max-width: 100%; margin: 0 auto; gap: 16px; padding: 24px 0; }
   .trust-divider { display: none; }
   .trust-item { padding: 4px 0; }
   .hero-cta { flex-direction: column; }
