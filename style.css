@@ -493,6 +493,6 @@ a { text-decoration: none; color: inherit; }
   .trust-bar-inner { flex-direction: column; align-items: flex-start; width: fit-content; max-width: 100%; margin: 0 auto; gap: 16px; padding: 24px 0; }
   .trust-divider { display: none; }
   .trust-item { padding: 4px 0; }
-  .hero-cta { flex-direction: column; }
+  .hero-cta { flex-direction: column; align-items: center; }
   .hero-cta .btn-primary, .hero-cta .btn-outline { justify-content: center; }
 }
