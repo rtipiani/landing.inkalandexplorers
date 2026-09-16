@@ -117,16 +117,16 @@ a { text-decoration: none; color: inherit; }
 .nav-links a:hover { color: var(--green-mid); }
 .nav-links a:hover::after { transform: scaleX(1); }
 .nav-actions { display: flex; align-items: center; gap: 20px; }
-.nav-socials { display: flex; gap: 28px; }
-.nav-socials a {
+.nav-community { display: flex; gap: 28px; }
+.nav-community a {
   display: flex; align-items: center; justify-content: center;
   color: var(--green-mid);
   transition: all var(--transition);
   font-size: 1.4rem;
 }
-.nav-socials a:hover.social-inst { color: #E1306C; transform: translateY(-2px); }
-.nav-socials a:hover.social-fb { color: #1877F2; transform: translateY(-2px); }
-.nav-socials a:hover.social-tk { color: var(--text); transform: translateY(-2px); }
+.nav-community a:hover.link-ig { color: #E1306C; transform: translateY(-2px); }
+.nav-community a:hover.link-fb { color: #1877F2; transform: translateY(-2px); }
+.nav-community a:hover.link-tt { color: var(--text); transform: translateY(-2px); }
 .lang-btn {
   background: none; border: 1px solid var(--gray-300); border-radius: 6px;
   padding: 7px 12px; font-size: .8rem; cursor: pointer; color: var(--gray-700);
@@ -388,14 +388,16 @@ a { text-decoration: none; color: inherit; }
 }
 .footer-logo { height: 100px; width: auto; filter: brightness(0) invert(1); margin-bottom: 14px; }
 .footer-tagline { font-size: .82rem; color: rgba(255,255,255,.5); margin-bottom: 22px; line-height: 1.6; }
-.footer-socials { display: flex; gap: 28px; margin-top: 10px; }
-.footer-socials a {
+.footer-community { display: flex; gap: 28px; margin-top: 10px; }
+.footer-community a {
   display: flex; align-items: center; justify-content: center;
-  color: rgba(255,255,255,.7);
-  transition: all var(--transition);
-  font-size: 1.3rem;
+  color: var(--white); font-size: 1.4rem;
+  transition: all var(--transition); opacity: .8;
 }
-.footer-socials a:hover { color: var(--white); transform: translateY(-2px); }
+.footer-community a:hover { opacity: 1; transform: translateY(-3px); }
+.footer-community a.link-ig:hover { color: #E1306C; }
+.footer-community a.link-fb:hover { color: #1877F2; }
+.footer-community a.link-tt:hover { color: #fff; }
 .footer-links h4, .footer-contact h4 {
   font-size: .78rem; font-weight: 800; letter-spacing: .12em;
   text-transform: uppercase; color: var(--white); margin-bottom: 18px;
@@ -471,8 +473,8 @@ a { text-decoration: none; color: inherit; }
     padding: 0 16px;
   }
   .logo-img { height: 50px; }
-  .nav-socials { gap: 14px; }
-  .nav-socials a { font-size: 1.2rem; }
+  .nav-community { gap: 14px; }
+  .nav-community a { font-size: 1.2rem; }
   .btn-whatsapp { padding: 8px 12px; font-size: .75rem; text-align: center; white-space: nowrap; }
   .nav-links { display: none; flex-direction: column; position: fixed; top: var(--nav-h); left: 0; right: 0; background: var(--white); padding: 24px; gap: 20px; box-shadow: var(--shadow-md); z-index: 999; }
   .nav-links.open { display: flex; }
