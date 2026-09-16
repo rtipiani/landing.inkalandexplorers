@@ -60,6 +60,7 @@ a { text-decoration: none; color: inherit; }
   cursor: pointer; transition: all var(--transition);
   box-shadow: 0 4px 20px rgba(27,67,50,.35);
 }
+.btn-inner { display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-align: center; }
 .btn-primary:hover { background: var(--green-mid); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(27,67,50,.45); }
 .btn-primary.btn-lg { font-size: 1.05rem; padding: 16px 36px; }
 
