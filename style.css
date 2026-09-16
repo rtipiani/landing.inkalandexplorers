@@ -384,7 +384,7 @@ a { text-decoration: none; color: inherit; }
 .footer { background: var(--green-deep); color: rgba(255,255,255,.75); padding: 72px 0 0; }
 .footer-inner {
   max-width: 1200px; margin: 0 auto; padding: 0 24px 48px;
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 48px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 48px;
 }
 .footer-logo { height: 100px; width: auto; filter: brightness(0) invert(1); margin-bottom: 14px; }
 .footer-tagline { font-size: .82rem; color: rgba(255,255,255,.5); margin-bottom: 22px; line-height: 1.6; }
@@ -462,7 +462,6 @@ a { text-decoration: none; color: inherit; }
   .experience { grid-template-columns: 1fr; }
   .exp-img-col { height: 380px; }
   .exp-content-col { padding: 60px 40px; }
-  .footer-inner { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
 
 @media (max-width: 768px) {
@@ -486,7 +485,12 @@ a { text-decoration: none; color: inherit; }
   .reviews-grid { grid-template-columns: 1fr; }
   .exp-content-col { padding: 48px 24px; }
   .exp-features { grid-template-columns: repeat(2,1fr); }
-  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-inner { flex-direction: column; text-align: center; gap: 48px; }
+  .footer-logo { margin: 0 auto 14px; }
+  .footer-community { justify-content: center; }
+  .footer-contact h4 { text-align: center; }
+  .contact-item { flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+  .contact-item i { margin-top: 0; }
   .float-wa-label { display: none; }
   .float-wa { padding: 13px; border-radius: 50%; right: 16px; bottom: 16px; }
 }
